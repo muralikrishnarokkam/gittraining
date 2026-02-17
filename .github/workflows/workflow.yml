@@ -1,0 +1,16 @@
+name: callworkflow
+
+on: 
+  workflow_call
+
+jobs:
+  Hello:
+    name: sampletask
+    runs-on: ubuntu-latest
+    steps:
+     - name: Checkoutrepo
+       uses: actions/checkout@v4
+     - name: print
+       run: echo "hello"
+       shell: bash
+    
