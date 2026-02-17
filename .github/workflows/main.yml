@@ -1,0 +1,15 @@
+name: 'Hello'
+
+on:
+  workflow_dispatch:
+
+jobs:
+  Hello:
+    name: sampletask
+    runs-on: windows-latest
+    steps:
+     - name: Checkoutrepo
+       uses: actions/checkout@v4
+        
+      
+    
