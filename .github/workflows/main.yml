@@ -10,6 +10,12 @@ jobs:
     steps:
      - name: Checkoutrepo
        uses: actions/checkout@v4
+
+  call:
+    name: calling other workflow
+    uses: muralikrishnarokkam/gittraining/.github/workflows/workflow.yml@main
+    
+    
         
       
     
